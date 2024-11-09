@@ -5,7 +5,7 @@ def input_members():
     print("Kelompok Presentasi - ILKOMIF (SEM1) UNIPI Kamda Cisurupan, Garut ")
     while True:
         member = input("Nama Mahasiswa: ")
-        if member.lower() == 'OK':
+        if member.lower() == 'done':
             break
         members.append(member)
     return members
