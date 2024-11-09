@@ -5,7 +5,7 @@ def input_members():
     print("Kelompok Presentasi - ILKOMIF (SEM1) UNIPI Kamda Cisurupan, Garut ")
     while True:
         member = input("Nama Mahasiswa: ")
-        if member.lower() == 'done':
+        if member.lower() == 'OK':
             break
         members.append(member)
     return members
@@ -13,8 +13,6 @@ def input_members():
 def create_teams(members, num_teams):
    
     random.shuffle(members)
-    
-
     teams = [[] for _ in range(num_teams)]
     for i, member in enumerate(members):
         teams[i % num_teams].append(member)
@@ -24,7 +22,7 @@ def create_teams(members, num_teams):
 
 members = input_members()
 
-num_teams = int(input("Masukkan jumlah tim: "))
+num_teams = int(input("Banyaknya Kelompok: "))
 
 
 teams = create_teams(members, num_teams)
