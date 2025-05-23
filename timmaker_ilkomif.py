@@ -2,11 +2,18 @@ import random
 
 def input_members():
     members = []
-    print("Kelompok Presentasi - ILKOMIF (SEM1) UNIPI Kamda Cisurupan, Garut ")
+    print("Kelompok Projek - SISOP 1 (SEM2) UNIPI Kamda Cisurupan, Garut ")
     while True:
         member = input("Nama Mahasiswa: ")
         if member.lower() == 'done':
             break
+
+
+
+
+
+
+
         members.append(member)
     return members
 
